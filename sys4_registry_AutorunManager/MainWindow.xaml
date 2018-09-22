@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sys4_registry_AutorunManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+		TextElement.FontSize="18"
+        Title="MainWindow" Height="450" Width="600">
+    <DockPanel>
+		<ToolBar DockPanel.Dock="Top">
+			<Separator/>
+			<Button Click="ButtonAdd_Click">Add</Button>
+			<Separator/>
+			<Button Name="removeBtn" Click="removeBtn_Click">Remove</Button>
+			<Separator/>
+		</ToolBar>
+		<ListView Name="myList" SelectionMode="Single"></ListView>
+    </DockPanel>
 </Window>
